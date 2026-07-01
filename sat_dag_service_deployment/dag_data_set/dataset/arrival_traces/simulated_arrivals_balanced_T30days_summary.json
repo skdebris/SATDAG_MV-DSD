@@ -1,0 +1,143 @@
+{
+  "generator_seed": 20260427,
+  "simulation_horizon_days": 30.0,
+  "observed_horizon_days": 361.1667,
+  "simulation_start_utc": "2026-04-25T00:00:00Z",
+  "global_hawkes_params": {
+    "1A": {
+      "branching_ratio_alpha": 0.4096,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.5171,
+      "cv_interarrival": 2.3877
+    },
+    "1B": {
+      "branching_ratio_alpha": 0.1512,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.6905,
+      "cv_interarrival": 1.3563
+    },
+    "2A": {
+      "branching_ratio_alpha": 0.3064,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.4851,
+      "cv_interarrival": 1.8835
+    },
+    "2B": {
+      "branching_ratio_alpha": 0.0713,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.5212,
+      "cv_interarrival": 1.1535
+    },
+    "3A": {
+      "branching_ratio_alpha": 0.1253,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.5426,
+      "cv_interarrival": 1.2866
+    },
+    "3B": {
+      "branching_ratio_alpha": 0.2195,
+      "beta_per_day": 1.0,
+      "mean_interarrival_days": 0.5242,
+      "cv_interarrival": 1.5625
+    },
+    "3C": {
+      "branching_ratio_alpha": 0.05,
+      "beta_per_day": 0.1429,
+      "mean_interarrival_days": 7.0,
+      "cv_interarrival": 0.1913
+    }
+  },
+  "active_region_processes": 1573,
+  "simulated_arrival_count": 660,
+  "counts_by_subarchetype": {
+    "1A": 127,
+    "1B": 83,
+    "2A": 88,
+    "2B": 83,
+    "3A": 96,
+    "3B": 93,
+    "3C": 90
+  },
+  "top_regions": [
+    {
+      "region_id": "r16_33",
+      "count": 33
+    },
+    {
+      "region_id": "r16_34",
+      "count": 28
+    },
+    {
+      "region_id": "r20_14",
+      "count": 25
+    },
+    {
+      "region_id": "r18_46",
+      "count": 16
+    },
+    {
+      "region_id": "r16_29",
+      "count": 15
+    },
+    {
+      "region_id": "r12_51",
+      "count": 14
+    },
+    {
+      "region_id": "r20_15",
+      "count": 10
+    },
+    {
+      "region_id": "r03_00",
+      "count": 10
+    },
+    {
+      "region_id": "r17_49",
+      "count": 10
+    },
+    {
+      "region_id": "r06_23",
+      "count": 9
+    },
+    {
+      "region_id": "r17_50",
+      "count": 9
+    },
+    {
+      "region_id": "r17_17",
+      "count": 9
+    },
+    {
+      "region_id": "r11_50",
+      "count": 8
+    },
+    {
+      "region_id": "r03_20",
+      "count": 8
+    },
+    {
+      "region_id": "r16_30",
+      "count": 8
+    },
+    {
+      "region_id": "r16_35",
+      "count": 8
+    },
+    {
+      "region_id": "r17_51",
+      "count": 7
+    },
+    {
+      "region_id": "r16_36",
+      "count": 7
+    },
+    {
+      "region_id": "r11_35",
+      "count": 7
+    },
+    {
+      "region_id": "r18_45",
+      "count": 7
+    }
+  ]
+}

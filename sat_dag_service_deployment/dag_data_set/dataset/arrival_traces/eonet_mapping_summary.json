@@ -1,0 +1,146 @@
+{
+  "fetched_at_utc": "2026-04-27T07:34:48.635765+00:00",
+  "cutoff_utc": "2025-04-27T07:34:48Z",
+  "days": 365,
+  "limit": 5000,
+  "grid_step_degrees": 6.0,
+  "grid_shape": {
+    "lat_cells": 30,
+    "lon_cells": 60
+  },
+  "raw_event_count": 5669,
+  "per_category_event_counts": {
+    "drought": 0,
+    "dustHaze": 0,
+    "earthquakes": 0,
+    "floods": 510,
+    "landslides": 0,
+    "manmade": 0,
+    "seaLakeIce": 36,
+    "severeStorms": 97,
+    "snow": 0,
+    "tempExtremes": 0,
+    "volcanoes": 26,
+    "waterColor": 0,
+    "wildfires": 5000
+  },
+  "category_to_subarchetype": {
+    "wildfires": "3B",
+    "severe storms": "3B",
+    "volcanoes": "1A",
+    "floods": "2B",
+    "drought": "1B",
+    "sea and lake ice": "3C",
+    "landslides": "1A",
+    "earthquakes": "3A",
+    "dust and haze": "2A",
+    "snow": "3C",
+    "temperature extremes": "1B",
+    "water color": "3C",
+    "manmade": "3A"
+  },
+  "mapping_config_used": true,
+  "normalization_summary": {
+    "total_normalized_records": 7767,
+    "counts_by_category": {
+      "Floods": 510,
+      "Sea and Lake Ice": 446,
+      "Severe Storms": 1785,
+      "Volcanoes": 26,
+      "Wildfires": 5000
+    },
+    "counts_by_subarchetype": {
+      "1A": 26,
+      "2B": 510,
+      "3B": 6785,
+      "3C": 446
+    },
+    "counts_by_archetype": {
+      "chain_like": 26,
+      "general": 7231,
+      "wide_shallow": 510
+    },
+    "top_regions": [
+      {
+        "region_id": "r16_34",
+        "count": 385
+      },
+      {
+        "region_id": "r20_14",
+        "count": 351
+      },
+      {
+        "region_id": "r16_33",
+        "count": 295
+      },
+      {
+        "region_id": "r16_35",
+        "count": 233
+      },
+      {
+        "region_id": "r18_46",
+        "count": 207
+      },
+      {
+        "region_id": "r20_15",
+        "count": 200
+      },
+      {
+        "region_id": "r12_51",
+        "count": 172
+      },
+      {
+        "region_id": "r15_34",
+        "count": 117
+      },
+      {
+        "region_id": "r16_29",
+        "count": 106
+      },
+      {
+        "region_id": "r20_16",
+        "count": 88
+      },
+      {
+        "region_id": "r16_30",
+        "count": 87
+      },
+      {
+        "region_id": "r17_46",
+        "count": 84
+      },
+      {
+        "region_id": "r15_35",
+        "count": 73
+      },
+      {
+        "region_id": "r18_47",
+        "count": 73
+      },
+      {
+        "region_id": "r12_50",
+        "count": 70
+      },
+      {
+        "region_id": "r21_14",
+        "count": 70
+      },
+      {
+        "region_id": "r12_52",
+        "count": 67
+      },
+      {
+        "region_id": "r18_45",
+        "count": 66
+      },
+      {
+        "region_id": "r13_22",
+        "count": 64
+      },
+      {
+        "region_id": "r15_33",
+        "count": 63
+      }
+    ]
+  }
+}

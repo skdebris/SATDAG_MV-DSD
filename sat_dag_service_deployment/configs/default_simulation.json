@@ -1,0 +1,17 @@
+{
+  "simulation": {
+    "deployment_period_minutes": 95.0,
+    "max_windows": 6,
+    "max_requests_per_window": 24
+  },
+  "algorithm": {
+    "name": "cpmv_dsd",
+    "sample_size": 160
+  },
+  "scheduler": {
+    "name": "heft"
+  },
+  "output": {
+    "run_name": "default_simulation"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "generated_at_utc": "2026-04-27T07:34:55.338982Z",
+  "seed": 20260427,
+  "raw_normalized_record_count": 7767,
+  "projection_record_count": 37381,
+  "balanced_record_count": 7767,
+  "weighted_support_by_subarchetype": {
+    "1A": 692.8,
+    "1B": 1441.9,
+    "2A": 1196.25,
+    "2B": 561.0,
+    "3A": 1102.0,
+    "3B": 2527.75,
+    "3C": 245.3
+  },
+  "balanced_counts_by_subarchetype": {
+    "1A": 1110,
+    "1B": 1110,
+    "2A": 1110,
+    "2B": 1110,
+    "3A": 1109,
+    "3B": 1109,
+    "3C": 1109
+  },
+  "unique_source_records_by_subarchetype": {
+    "1A": 1016,
+    "1B": 1018,
+    "2A": 1007,
+    "2B": 845,
+    "3A": 1032,
+    "3B": 1014,
+    "3C": 412
+  },
+  "balanced_counts_by_category": {
+    "Floods": 603,
+    "Sea and Lake Ice": 1284,
+    "Severe Storms": 1828,
+    "Volcanoes": 41,
+    "Wildfires": 4011
+  }
+}

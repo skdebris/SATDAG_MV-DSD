@@ -1,0 +1,23 @@
+{
+  "simulation": {
+    "deployment_mode": "fixed",
+    "max_windows": null,
+    "max_requests_per_window": 32
+  },
+  "algorithm": {
+    "sample_size": 300,
+    "max_replicas_per_service": 5
+  },
+  "environment": {
+    "density_mode": "sparse",
+    "perturbation_mode": "low",
+    "sparse_crosslink_stride": 3,
+    "sparse_crosslink_drop_bonus": 0.75,
+    "link_drop_cap": 0.92,
+    "crosslink_capacity_mbps": 1600.0,
+    "inplane_capacity_mbps": 2000.0
+  },
+  "scheduler": {
+    "max_route_wait_slots": 15
+  }
+}

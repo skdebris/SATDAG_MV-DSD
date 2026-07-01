@@ -1,0 +1,20 @@
+{
+  "request_count": 660,
+  "subarchetype_distribution": {
+    "1A": 127,
+    "1B": 83,
+    "2A": 88,
+    "2B": 83,
+    "3A": 96,
+    "3B": 93,
+    "3C": 90
+  },
+  "dag_type_distribution": {
+    "chain_like": 210,
+    "general": 279,
+    "wide_shallow": 171
+  },
+  "source_arrival_trace": "/mnt/e/cooperative_game_theory_based_scheme_for_dependency_aware_service_deployment_in_satellite_networks/sat_dag_service_deployment/dag_data_set/dataset/arrival_traces/simulated_arrivals_balanced_T30days.json",
+  "source_template_dir": "/mnt/e/cooperative_game_theory_based_scheme_for_dependency_aware_service_deployment_in_satellite_networks/sat_dag_service_deployment/dag_data_set/dataset/dag_templates",
+  "materialized_output": "/mnt/e/cooperative_game_theory_based_scheme_for_dependency_aware_service_deployment_in_satellite_networks/sat_dag_service_deployment/dag_data_set/dataset/job_requests/requests_T30days.jsonl"
+}

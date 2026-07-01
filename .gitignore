@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated simulation outputs
+sat_dag_service_deployment/simulator/outputs/
+sat_dag_service_deployment/**/outputs/
+sat_dag_service_deployment/**/runs/
+sat_dag_service_deployment/**/root_runs/
+sat_dag_service_deployment/**/root_exports/
+sat_dag_service_deployment/**/aggregate/
+sat_dag_service_deployment/**/intermediate/
+sat_dag_service_deployment/**/tuning/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.backup
+
+# Paper/build artifacts should stay outside this code repository
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

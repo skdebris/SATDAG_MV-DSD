@@ -1,0 +1,319 @@
+{
+  "instance_id": "general_3B_001",
+  "archetype": "general",
+  "subarchetype": "3B",
+  "nodes": [
+    {
+      "id": "v1",
+      "tag": "optical_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 2.2,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v2",
+      "tag": "infrared_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 1.0,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v3",
+      "tag": "optical_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 13.1,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v4",
+      "tag": "infrared_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 11.8,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v5",
+      "tag": "optical_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 63.9,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v6",
+      "tag": "infrared_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 50.4,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v7",
+      "tag": "early_fusion",
+      "service_type": "IF",
+      "service_id": "f5",
+      "service_name": "Image Fusion",
+      "processing_level": "L1C-L2",
+      "workload_GFLOPs": 132.0,
+      "memory_MB": 1200,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.7
+    },
+    {
+      "id": "v8",
+      "tag": "fast_warning_detection",
+      "service_type": "TD",
+      "service_id": "f7",
+      "service_name": "Target Detection",
+      "processing_level": "L2-L3",
+      "workload_GFLOPs": 310.2,
+      "memory_MB": 2500,
+      "storage_MB": 800,
+      "eta_gflops_per_ghz_s": 0.6
+    },
+    {
+      "id": "v9",
+      "tag": "fast_warning_report",
+      "service_type": "RA",
+      "service_id": "f8",
+      "service_name": "Result Aggregation",
+      "processing_level": "L3-L4",
+      "workload_GFLOPs": 5.3,
+      "memory_MB": 300,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v10",
+      "tag": "deep_feature_analysis",
+      "service_type": "FE",
+      "service_id": "f6",
+      "service_name": "Feature Extraction",
+      "processing_level": "L2",
+      "workload_GFLOPs": 89.0,
+      "memory_MB": 1500,
+      "storage_MB": 500,
+      "eta_gflops_per_ghz_s": 0.85
+    },
+    {
+      "id": "v11",
+      "tag": "full_resolution_detection",
+      "service_type": "TD",
+      "service_id": "f7",
+      "service_name": "Target Detection",
+      "processing_level": "L2-L3",
+      "workload_GFLOPs": 369.0,
+      "memory_MB": 2500,
+      "storage_MB": 800,
+      "eta_gflops_per_ghz_s": 0.6
+    },
+    {
+      "id": "v12",
+      "tag": "detailed_report",
+      "service_type": "RA",
+      "service_id": "f8",
+      "service_name": "Result Aggregation",
+      "processing_level": "L3-L4",
+      "workload_GFLOPs": 4.3,
+      "memory_MB": 300,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v13",
+      "tag": "auxiliary_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 4.2,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v14",
+      "tag": "auxiliary_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 3.9,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v15",
+      "tag": "auxiliary_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 57.1,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    }
+  ],
+  "edges": [
+    {
+      "src": "v1",
+      "dst": "v3",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 21.31
+    },
+    {
+      "src": "v10",
+      "dst": "v11",
+      "src_service_type": "FE",
+      "dst_service_type": "TD",
+      "data_MB": 28.07
+    },
+    {
+      "src": "v11",
+      "dst": "v12",
+      "src_service_type": "TD",
+      "dst_service_type": "RA",
+      "data_MB": 1.98
+    },
+    {
+      "src": "v13",
+      "dst": "v14",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 30.46
+    },
+    {
+      "src": "v14",
+      "dst": "v15",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 19.76
+    },
+    {
+      "src": "v15",
+      "dst": "v7",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 333.35
+    },
+    {
+      "src": "v2",
+      "dst": "v4",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 30.87
+    },
+    {
+      "src": "v3",
+      "dst": "v5",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 31.63
+    },
+    {
+      "src": "v4",
+      "dst": "v6",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 29.88
+    },
+    {
+      "src": "v5",
+      "dst": "v7",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 624.53
+    },
+    {
+      "src": "v6",
+      "dst": "v7",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 628.7
+    },
+    {
+      "src": "v7",
+      "dst": "v10",
+      "src_service_type": "IF",
+      "dst_service_type": "FE",
+      "data_MB": 135.12
+    },
+    {
+      "src": "v7",
+      "dst": "v8",
+      "src_service_type": "IF",
+      "dst_service_type": "TD",
+      "data_MB": 85.62
+    },
+    {
+      "src": "v8",
+      "dst": "v9",
+      "src_service_type": "TD",
+      "dst_service_type": "RA",
+      "data_MB": 1.18
+    }
+  ],
+  "metadata": {
+    "instance_id": "general_3B_001",
+    "archetype": "general",
+    "subarchetype": "3B",
+    "num_nodes": 15,
+    "num_edges": 14,
+    "num_sources": 3,
+    "num_sinks": 2,
+    "source_nodes": [
+      "v1",
+      "v13",
+      "v2"
+    ],
+    "sink_nodes": [
+      "v12",
+      "v9"
+    ],
+    "width": 3,
+    "depth": 7,
+    "structure_type": "general",
+    "service_distribution": {
+      "DA": 3,
+      "FE": 1,
+      "GC": 3,
+      "IF": 1,
+      "RA": 2,
+      "RC": 3,
+      "TD": 2
+    },
+    "total_workload_GFLOPs": 1117.4,
+    "total_data_MB": 2002.46
+  }
+}

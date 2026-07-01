@@ -1,0 +1,318 @@
+{
+  "instance_id": "ws_2A_010",
+  "archetype": "wide_shallow",
+  "subarchetype": "2A",
+  "nodes": [
+    {
+      "id": "v1",
+      "tag": "source_1_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 4.1,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v2",
+      "tag": "source_1_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 9.5,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v3",
+      "tag": "source_1_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 56.1,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v4",
+      "tag": "source_2_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 4.5,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v5",
+      "tag": "source_2_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 10.6,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v6",
+      "tag": "source_2_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 35.0,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v7",
+      "tag": "source_3_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 1.7,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v8",
+      "tag": "source_3_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 10.3,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v9",
+      "tag": "source_3_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 55.7,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v10",
+      "tag": "source_4_da",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 1.2,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v11",
+      "tag": "source_4_rc",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 11.5,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v12",
+      "tag": "source_4_gc",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 46.5,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v13",
+      "tag": "global_fusion",
+      "service_type": "IF",
+      "service_id": "f5",
+      "service_name": "Image Fusion",
+      "processing_level": "L1C-L2",
+      "workload_GFLOPs": 188.6,
+      "memory_MB": 1200,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.7
+    },
+    {
+      "id": "v14",
+      "tag": "detection_head",
+      "service_type": "TD",
+      "service_id": "f7",
+      "service_name": "Target Detection",
+      "processing_level": "L2-L3",
+      "workload_GFLOPs": 327.7,
+      "memory_MB": 2500,
+      "storage_MB": 800,
+      "eta_gflops_per_ghz_s": 0.6
+    },
+    {
+      "id": "v15",
+      "tag": "final_aggregation",
+      "service_type": "RA",
+      "service_id": "f8",
+      "service_name": "Result Aggregation",
+      "processing_level": "L3-L4",
+      "workload_GFLOPs": 4.2,
+      "memory_MB": 300,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "src": "v1",
+      "dst": "v2",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 34.73
+    },
+    {
+      "src": "v10",
+      "dst": "v11",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 31.38
+    },
+    {
+      "src": "v11",
+      "dst": "v12",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 17.35
+    },
+    {
+      "src": "v12",
+      "dst": "v13",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 620.21
+    },
+    {
+      "src": "v13",
+      "dst": "v14",
+      "src_service_type": "IF",
+      "dst_service_type": "TD",
+      "data_MB": 88.74
+    },
+    {
+      "src": "v14",
+      "dst": "v15",
+      "src_service_type": "TD",
+      "dst_service_type": "RA",
+      "data_MB": 3.71
+    },
+    {
+      "src": "v2",
+      "dst": "v3",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 19.61
+    },
+    {
+      "src": "v3",
+      "dst": "v13",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 353.19
+    },
+    {
+      "src": "v4",
+      "dst": "v5",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 25.99
+    },
+    {
+      "src": "v5",
+      "dst": "v6",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 26.76
+    },
+    {
+      "src": "v6",
+      "dst": "v13",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 483.59
+    },
+    {
+      "src": "v7",
+      "dst": "v8",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 15.86
+    },
+    {
+      "src": "v8",
+      "dst": "v9",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 25.37
+    },
+    {
+      "src": "v9",
+      "dst": "v13",
+      "src_service_type": "GC",
+      "dst_service_type": "IF",
+      "data_MB": 485.18
+    }
+  ],
+  "metadata": {
+    "instance_id": "ws_2A_010",
+    "archetype": "wide_shallow",
+    "subarchetype": "2A",
+    "num_nodes": 15,
+    "num_edges": 14,
+    "num_sources": 4,
+    "num_sinks": 1,
+    "source_nodes": [
+      "v1",
+      "v10",
+      "v4",
+      "v7"
+    ],
+    "sink_nodes": [
+      "v15"
+    ],
+    "width": 4,
+    "depth": 6,
+    "structure_type": "wide_shallow",
+    "service_distribution": {
+      "DA": 4,
+      "GC": 4,
+      "IF": 1,
+      "RA": 1,
+      "RC": 4,
+      "TD": 1
+    },
+    "total_workload_GFLOPs": 767.2,
+    "total_data_MB": 2231.67
+  }
+}

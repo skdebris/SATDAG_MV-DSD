@@ -1,0 +1,210 @@
+{
+  "instance_id": "chain_1A_006",
+  "archetype": "chain_like",
+  "subarchetype": "1A",
+  "nodes": [
+    {
+      "id": "v1",
+      "tag": "main_1",
+      "service_type": "DA",
+      "service_id": "f1",
+      "service_name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_GFLOPs": 2.8,
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v2",
+      "tag": "main_2",
+      "service_type": "RC",
+      "service_id": "f2",
+      "service_name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_GFLOPs": 9.7,
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v3",
+      "tag": "main_3",
+      "service_type": "GC",
+      "service_id": "f3",
+      "service_name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_GFLOPs": 36.7,
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "id": "v4",
+      "tag": "main_4",
+      "service_type": "CM",
+      "service_id": "f4",
+      "service_name": "Cloud Masking",
+      "processing_level": "L1B",
+      "workload_GFLOPs": 22.9,
+      "memory_MB": 1000,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "id": "v5",
+      "tag": "main_5",
+      "service_type": "IF",
+      "service_id": "f5",
+      "service_name": "Image Fusion",
+      "processing_level": "L1C-L2",
+      "workload_GFLOPs": 208.8,
+      "memory_MB": 1200,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.7
+    },
+    {
+      "id": "v6",
+      "tag": "main_6",
+      "service_type": "FE",
+      "service_id": "f6",
+      "service_name": "Feature Extraction",
+      "processing_level": "L2",
+      "workload_GFLOPs": 94.4,
+      "memory_MB": 1500,
+      "storage_MB": 500,
+      "eta_gflops_per_ghz_s": 0.85
+    },
+    {
+      "id": "v7",
+      "tag": "main_7",
+      "service_type": "TD",
+      "service_id": "f7",
+      "service_name": "Target Detection",
+      "processing_level": "L2-L3",
+      "workload_GFLOPs": 370.5,
+      "memory_MB": 2500,
+      "storage_MB": 800,
+      "eta_gflops_per_ghz_s": 0.6
+    },
+    {
+      "id": "v8",
+      "tag": "main_8",
+      "service_type": "RA",
+      "service_id": "f8",
+      "service_name": "Result Aggregation",
+      "processing_level": "L3-L4",
+      "workload_GFLOPs": 9.1,
+      "memory_MB": 300,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "id": "v9",
+      "tag": "auxiliary_masking",
+      "service_type": "CM",
+      "service_id": "f4",
+      "service_name": "Cloud Masking",
+      "processing_level": "L1B",
+      "workload_GFLOPs": 15.8,
+      "memory_MB": 1000,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "src": "v1",
+      "dst": "v2",
+      "src_service_type": "DA",
+      "dst_service_type": "RC",
+      "data_MB": 28.19
+    },
+    {
+      "src": "v2",
+      "dst": "v3",
+      "src_service_type": "RC",
+      "dst_service_type": "GC",
+      "data_MB": 18.9
+    },
+    {
+      "src": "v3",
+      "dst": "v4",
+      "src_service_type": "GC",
+      "dst_service_type": "CM",
+      "data_MB": 247.82
+    },
+    {
+      "src": "v3",
+      "dst": "v9",
+      "src_service_type": "GC",
+      "dst_service_type": "CM",
+      "data_MB": 188.35
+    },
+    {
+      "src": "v4",
+      "dst": "v5",
+      "src_service_type": "CM",
+      "dst_service_type": "IF",
+      "data_MB": 103.8
+    },
+    {
+      "src": "v5",
+      "dst": "v6",
+      "src_service_type": "IF",
+      "dst_service_type": "FE",
+      "data_MB": 155.41
+    },
+    {
+      "src": "v6",
+      "dst": "v7",
+      "src_service_type": "FE",
+      "dst_service_type": "TD",
+      "data_MB": 29.73
+    },
+    {
+      "src": "v7",
+      "dst": "v8",
+      "src_service_type": "TD",
+      "dst_service_type": "RA",
+      "data_MB": 0.6
+    },
+    {
+      "src": "v9",
+      "dst": "v6",
+      "src_service_type": "CM",
+      "dst_service_type": "FE",
+      "data_MB": 98.46
+    }
+  ],
+  "metadata": {
+    "instance_id": "chain_1A_006",
+    "archetype": "chain_like",
+    "subarchetype": "1A",
+    "num_nodes": 9,
+    "num_edges": 9,
+    "num_sources": 1,
+    "num_sinks": 1,
+    "source_nodes": [
+      "v1"
+    ],
+    "sink_nodes": [
+      "v8"
+    ],
+    "width": 2,
+    "depth": 8,
+    "structure_type": "chain_like",
+    "service_distribution": {
+      "CM": 2,
+      "DA": 1,
+      "FE": 1,
+      "GC": 1,
+      "IF": 1,
+      "RA": 1,
+      "RC": 1,
+      "TD": 1
+    },
+    "total_workload_GFLOPs": 770.7,
+    "total_data_MB": 871.26
+  }
+}

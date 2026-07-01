@@ -1,0 +1,158 @@
+{
+  "version": "v1",
+  "description": "Formal mapping from NASA EONET event categories to the 7 DAG subarchetypes used by the CPMV-DSD simulator.",
+  "subarchetypes": {
+    "1A": {
+      "archetype": "chain_like",
+      "name": "single_sensor_target_pipeline"
+    },
+    "1B": {
+      "archetype": "chain_like",
+      "name": "time_series_monitoring_pipeline"
+    },
+    "2A": {
+      "archetype": "wide_shallow",
+      "name": "multi_source_parallel_fusion"
+    },
+    "2B": {
+      "archetype": "wide_shallow",
+      "name": "multi_region_parallel_collection"
+    },
+    "3A": {
+      "archetype": "general",
+      "name": "generic_multi_stage_collaborative_workflow"
+    },
+    "3B": {
+      "archetype": "general",
+      "name": "real_time_disaster_monitoring_dual_branch"
+    },
+    "3C": {
+      "archetype": "general",
+      "name": "multi_modal_temporal_fusion"
+    }
+  },
+  "categories": {
+    "Drought": {
+      "primary_subarchetype": "1B",
+      "balanced_projection_weights": {
+        "1B": 0.7,
+        "3A": 0.2,
+        "3C": 0.1
+      },
+      "rationale": "Long-duration drought monitoring is naturally mapped to temporal observation pipelines, with a smaller fraction requiring higher-level analysis and temporal fusion."
+    },
+    "Dust and Haze": {
+      "primary_subarchetype": "2A",
+      "balanced_projection_weights": {
+        "2A": 0.6,
+        "3A": 0.2,
+        "3B": 0.2
+      },
+      "rationale": "Dust and haze events commonly require multi-source fusion of optical, thermal, and aerosol-sensitive observations, with some requests escalating to general or emergency workflows."
+    },
+    "Earthquakes": {
+      "primary_subarchetype": "3A",
+      "balanced_projection_weights": {
+        "2B": 0.2,
+        "3A": 0.6,
+        "3B": 0.2
+      },
+      "rationale": "Earthquake assessment usually involves a mixed collaborative workflow, while some missions emphasize rapid regional collection or fast response."
+    },
+    "Floods": {
+      "primary_subarchetype": "2B",
+      "balanced_projection_weights": {
+        "1B": 0.15,
+        "2B": 0.4,
+        "3A": 0.15,
+        "3B": 0.3
+      },
+      "rationale": "Flood events often trigger large-area parallel collection and rapid disaster response, with a smaller portion corresponding to temporal monitoring and general multi-stage analysis."
+    },
+    "Landslides": {
+      "primary_subarchetype": "1A",
+      "balanced_projection_weights": {
+        "1A": 0.6,
+        "3A": 0.25,
+        "3B": 0.15
+      },
+      "rationale": "Landslide mapping is typically a relatively direct detection chain, but can also appear in broader post-disaster coordination workflows."
+    },
+    "Manmade": {
+      "primary_subarchetype": "3A",
+      "balanced_projection_weights": {
+        "2A": 0.2,
+        "3A": 0.55,
+        "3B": 0.25
+      },
+      "rationale": "Manmade events span broad collaborative analysis, with a subset requiring multi-source fusion or emergency-response branches."
+    },
+    "Sea and Lake Ice": {
+      "primary_subarchetype": "3C",
+      "balanced_projection_weights": {
+        "1B": 0.25,
+        "3A": 0.2,
+        "3C": 0.55
+      },
+      "rationale": "Sea-ice monitoring is dominated by temporal fusion, but a nontrivial fraction corresponds to long-term monitoring and generic multi-stage products."
+    },
+    "Severe Storms": {
+      "primary_subarchetype": "3B",
+      "balanced_projection_weights": {
+        "1A": 0.1,
+        "2A": 0.25,
+        "2B": 0.2,
+        "3A": 0.1,
+        "3B": 0.35
+      },
+      "rationale": "Storm response demands both rapid alerting and large-scale multi-source acquisition, with smaller shares of direct detection and general analysis tasks."
+    },
+    "Snow": {
+      "primary_subarchetype": "3C",
+      "balanced_projection_weights": {
+        "1B": 0.3,
+        "2B": 0.2,
+        "3C": 0.5
+      },
+      "rationale": "Snow-related missions are mostly temporal and seasonal, but also include broad-area collection and temporal fusion workflows."
+    },
+    "Temperature Extremes": {
+      "primary_subarchetype": "1B",
+      "balanced_projection_weights": {
+        "1B": 0.6,
+        "3A": 0.2,
+        "3B": 0.2
+      },
+      "rationale": "Temperature anomalies are naturally temporal monitoring tasks, with smaller shares escalating to collaborative analysis and emergency reporting."
+    },
+    "Volcanoes": {
+      "primary_subarchetype": "1A",
+      "balanced_projection_weights": {
+        "1A": 0.55,
+        "1B": 0.15,
+        "3A": 0.3
+      },
+      "rationale": "Volcanic activity often begins as direct single-sensor detection, while sustained monitoring and broader hazard analysis require temporal and mixed workflows."
+    },
+    "Water Color": {
+      "primary_subarchetype": "3C",
+      "balanced_projection_weights": {
+        "2A": 0.25,
+        "3A": 0.25,
+        "3C": 0.5
+      },
+      "rationale": "Water-color missions rely on multi-temporal or multi-modal fusion, with a smaller subset emphasizing generic analysis or parallel fusion."
+    },
+    "Wildfires": {
+      "primary_subarchetype": "3B",
+      "balanced_projection_weights": {
+        "1A": 0.1,
+        "1B": 0.25,
+        "2A": 0.15,
+        "3A": 0.15,
+        "3B": 0.35
+      },
+      "rationale": "Wildfire response mixes fast warning, temporal progression monitoring, multisource fusion, and deeper collaborative post-event analysis."
+    }
+  }
+}

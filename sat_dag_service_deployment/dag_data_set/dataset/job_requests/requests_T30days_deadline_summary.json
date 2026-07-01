@@ -1,0 +1,64 @@
+{
+  "request_count": 660,
+  "deadline_generation_seed": 20260427,
+  "deadline_level_distribution": {
+    "loose": 144,
+    "moderate": 328,
+    "tight": 188
+  },
+  "mission_class_distribution": {
+    "cooperative_monitoring": 96,
+    "disaster_monitoring": 176,
+    "resource_appraisal": 83,
+    "ship_detection": 127,
+    "weather_monitoring": 178
+  },
+  "dag_type_distribution": {
+    "chain_like": 210,
+    "general": 279,
+    "wide_shallow": 171
+  },
+  "relative_deadline_minutes": {
+    "min": 9.899086061685862,
+    "mean": 28.409002856358455,
+    "p50": 28.074712681286428,
+    "p75": 33.69725831639119,
+    "p95": 44.08482375454356,
+    "max": 56.835246066508255
+  },
+  "lower_bound_time_minutes": {
+    "min": 1.8642368795982067,
+    "mean": 3.6050453594200578,
+    "p50": 3.81794679250591,
+    "p75": 4.162533978842581,
+    "p95": 4.641229673924389,
+    "max": 5.243217525684046
+  },
+  "deadline_to_lower_bound_ratio": {
+    "min": 4.815831691187218,
+    "mean": 7.9406557577536185,
+    "p50": 7.854565789469105,
+    "p75": 8.969437101163425,
+    "p95": 11.568478415360882,
+    "max": 12.655762706197812
+  },
+  "reference_capacity": {
+    "reference_scenario": "configs\\scenarios\\normal_nominal.json",
+    "reference_percentile": 75.0,
+    "c_ref_gflops_per_s": 2.734175,
+    "b_ref_mbps": 1967.9515,
+    "b_ref_mb_per_s": 245.9939375,
+    "num_reference_satellites": 80,
+    "num_reference_directed_links": 17934
+  },
+  "pilot_calibration_factor": 3.5,
+  "calibrated_deadline_formula": "D = eta_level * xi_dag * LB * jitter * pilot_calibration_factor",
+  "field_units": {
+    "cp_workload_lb": "days",
+    "cp_data_lb": "days",
+    "lower_bound_time": "days",
+    "relative_deadline": "days",
+    "absolute_deadline": "days",
+    "*_minutes": "minutes"
+  }
+}

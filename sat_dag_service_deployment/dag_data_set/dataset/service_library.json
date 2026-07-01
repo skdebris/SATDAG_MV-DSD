@@ -1,0 +1,187 @@
+{
+  "generator_seed": 20260427,
+  "probabilities": {
+    "p_branch": 0.3,
+    "p_merge": 0.4
+  },
+  "services": [
+    {
+      "service_id": "f1",
+      "short_name": "DA",
+      "name": "Data Acquisition",
+      "processing_level": "L0",
+      "workload_distribution": {
+        "type": "uniform",
+        "min": 1.0,
+        "max": 5.0
+      },
+      "memory_MB": 200,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "service_id": "f2",
+      "short_name": "RC",
+      "name": "Radiometric Correction",
+      "processing_level": "L0-L1A",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 12.0,
+        "sigma": 3.0
+      },
+      "memory_MB": 500,
+      "storage_MB": 200,
+      "eta_gflops_per_ghz_s": 1.0
+    },
+    {
+      "service_id": "f3",
+      "short_name": "GC",
+      "name": "Geometric Correction",
+      "processing_level": "L1A-L1B",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 50.0,
+        "sigma": 10.0
+      },
+      "memory_MB": 800,
+      "storage_MB": 300,
+      "eta_gflops_per_ghz_s": 0.8
+    },
+    {
+      "service_id": "f4",
+      "short_name": "CM",
+      "name": "Cloud Masking",
+      "processing_level": "L1B",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 20.0,
+        "sigma": 5.0
+      },
+      "memory_MB": 1000,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.9
+    },
+    {
+      "service_id": "f5",
+      "short_name": "IF",
+      "name": "Image Fusion",
+      "processing_level": "L1C-L2",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 160.0,
+        "sigma": 30.0
+      },
+      "memory_MB": 1200,
+      "storage_MB": 400,
+      "eta_gflops_per_ghz_s": 0.7
+    },
+    {
+      "service_id": "f6",
+      "short_name": "FE",
+      "name": "Feature Extraction",
+      "processing_level": "L2",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 80.0,
+        "sigma": 15.0
+      },
+      "memory_MB": 1500,
+      "storage_MB": 500,
+      "eta_gflops_per_ghz_s": 0.85
+    },
+    {
+      "service_id": "f7",
+      "short_name": "TD",
+      "name": "Target Detection",
+      "processing_level": "L2-L3",
+      "workload_distribution": {
+        "type": "normal",
+        "mu": 320.0,
+        "sigma": 60.0
+      },
+      "memory_MB": 2500,
+      "storage_MB": 800,
+      "eta_gflops_per_ghz_s": 0.6
+    },
+    {
+      "service_id": "f8",
+      "short_name": "RA",
+      "name": "Result Aggregation",
+      "processing_level": "L3-L4",
+      "workload_distribution": {
+        "type": "uniform",
+        "min": 1.0,
+        "max": 10.0
+      },
+      "memory_MB": 300,
+      "storage_MB": 100,
+      "eta_gflops_per_ghz_s": 1.0
+    }
+  ],
+  "edge_profiles_MB": {
+    "CM->FE": {
+      "min": 50.0,
+      "max": 120.0
+    },
+    "CM->IF": {
+      "min": 50.0,
+      "max": 150.0
+    },
+    "DA->RC": {
+      "min": 15.0,
+      "max": 35.0
+    },
+    "FE->FE": {
+      "min": 10.0,
+      "max": 30.0
+    },
+    "FE->RA": {
+      "min": 5.0,
+      "max": 30.0
+    },
+    "FE->TD": {
+      "min": 20.0,
+      "max": 60.0
+    },
+    "GC->CM": {
+      "min": 150.0,
+      "max": 250.0
+    },
+    "GC->FE": {
+      "min": 300.0,
+      "max": 600.0
+    },
+    "GC->IF": {
+      "min": 300.0,
+      "max": 700.0
+    },
+    "GC->RA": {
+      "min": 80.0,
+      "max": 200.0
+    },
+    "IF->FE": {
+      "min": 80.0,
+      "max": 200.0
+    },
+    "IF->TD": {
+      "min": 80.0,
+      "max": 200.0
+    },
+    "RA->FE": {
+      "min": 5.0,
+      "max": 20.0
+    },
+    "RC->CM": {
+      "min": 50.0,
+      "max": 150.0
+    },
+    "RC->GC": {
+      "min": 15.0,
+      "max": 35.0
+    },
+    "TD->RA": {
+      "min": 0.05,
+      "max": 5.0
+    }
+  }
+}
